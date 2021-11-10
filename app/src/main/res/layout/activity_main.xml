@@ -7,6 +7,17 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/Spr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
         android:id="@+id/Imie"
         android:layout_width="237dp"
         android:layout_height="53dp"
@@ -26,6 +37,7 @@
         android:layout_marginTop="252dp"
         android:hint="Podaj Imie"
         android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/wprNazwisko"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,21 +50,23 @@
         android:layout_marginTop="340dp"
         android:hint="Podaj Nazwisko"
         android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/wyslij"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/zatwierdz"
+        android:id="@+id/wyslij"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="408dp"
-        android:text="Button"
+        android:text="Zatwierdź"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintHorizontal_bias="0.783"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
 
     <TextView
         android:id="@+id/wynikPopr"
@@ -65,5 +79,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.723"
         tools:text="WYNIK" />
+
+    <TextView
+        android:id="@+id/Spr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
